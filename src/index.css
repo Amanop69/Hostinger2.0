@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        @apply p-0 m-0 box-border font-pop bg-[#1f1e1e] !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-gray-600 overflow-x-hidden;
+    }
+
+    nav{
+        @apply fixed top-0 z-50 w-full
+    }
+}
+    
+@layer components {
+
+    .links{
+        @apply cursor-pointer py-[10px] transition duration-[.2s] hover:text-[#fff]
+    }
+
+    .login{
+        @apply hidden sm:flex sm:border-2 sm:border-[#ffffff] px-4 py-1 sm:py-2 rounded-[20px] hover:bg-[#ffffff] hover:text-[#000] 
+    } 
+    
+    .time{
+        @apply w-[50px] h-[50px] bg-[#fff] mr-3 rounded-[4px] flex items-center justify-center
+    }
+
+    .day{
+        @apply w-[50px] box-border text-[#fff] text-[12px] flex justify-center mr-2
+    }
+
+    .serv{
+        @apply flex items-center justify-start text-center shadow-sm shadow-[#e9e9e9] bg-[#e2e0e0] w-[90%] rounded-[8px] py-3 my-2 px-2 sm:w-[70%] h-[3rem] space-x-2 object-contain transition ease-in-out hover:scale-110 duration-200
+    }
+
+    .ser{
+        @apply font-semibold text-[18px]
+    }
+
+    .log{
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,35,36,1) 0%, rgba(38,36,36,1) 100%, rgba(62,62,62,1) 100%, rgba(70,69,69,1) 100%);
+    }
+
+    .foot{
+        @apply cursor-pointer transition duration-[.2s] hover:text-[#fff]
+    }
+
+    .linkk{
+        @apply cursor-pointer py-[10px] transition duration-[.2s] hover:text-[#fff] items-center justify-center
+    }
+}
